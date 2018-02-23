@@ -1,4 +1,4 @@
-# Slugify VueJs
+# Vue-Tags
 
 A Vue.js 2 input Tag component . Flexible you can edit wathever you like related to HTML/CSS.
 
@@ -8,7 +8,7 @@ A Vue.js 2 input Tag component . Flexible you can edit wathever you like related
 
 ## Demo
 
-<a href="http://devma.net/package/Tags">Demo</a>
+<a href="http://devma.net/package/Vuetags">Demo</a>
 
 ## Installation :
 
