@@ -20,7 +20,7 @@ npm install vue-tags
 
 In your script entry point:
 
-```javascript
+```html
 <div id="app">
 
   <input-tags v-model="tags">

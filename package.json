@@ -2,7 +2,7 @@
   "name": "vue-tags",
   "version": "1.0.0",
   "description": "Vue.js input tag editor component",
-  "main": "dist/vue-suglify.js",
+  "main": "dist/vue-tags.js",
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./webpack.config.js"
   },
