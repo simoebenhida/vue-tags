@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simoebenhida/"
+    "url": "git+https://github.com/simoebenhida/vue-tags"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
