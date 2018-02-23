@@ -1,6 +1,6 @@
 # Vue-Tags
 
-A Vue.js 2 input Tag component . Flexible you can edit wathever you like related to HTML/CSS.
+A Flexible Vue.js 2 input Tag component where you can edit wathever you like related to HTML/CSS.
 
 <p align="center">
   <img src="/demo.gif" width="750" alt="Logo"/>
