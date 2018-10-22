@@ -47,16 +47,19 @@
         inputEventHandlers: {
           input : (e) => {this.newTag = e.target.value},
           keydown : (e) => {
+
+            let arrayKeys = this.addKey.search(',') !== -1 ? this.addKey.split(',') : [].push(this.addKey);
+
           if(e.keyCode === this.deleteKey)
           {
             this.handleTagBackspace()
           }
-          if(e.keyCode === this.addKey)
+          if( arrayKeys.include(e.keyCode.toString()) )
           {
             e.preventDefault()
             this.addTag()
           }
-          if(e.keyCode === 13 && this.addKey !== 13 && this.deleteKey !== 13)
+          if(e.keyCode === 13 && !arrayKeys.include('13') && this.deleteKey !== 13)
           {
             e.preventDefault()
           }
