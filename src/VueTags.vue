@@ -6,12 +6,16 @@
     },
     props: {
       deleteKey: {
-      type: Number,
-      default: 8
+      type: Array,
+      default: function() {
+          return ['8']
+        }
       },
       addKey: {
-      type: Number,
-      default: 13
+      type: Array,
+      default: function() {
+          return ['13']
+        }
       },
       tags:{
         required: true
@@ -48,18 +52,18 @@
           input : (e) => {this.newTag = e.target.value},
           keydown : (e) => {
 
-            let arrayKeys = this.addKey.search(',') !== -1 ? this.addKey.split(',') : [].push(this.addKey);
-
-          if(e.keyCode === this.deleteKey)
+          if(this.deleteKey.includes(e.keyCode.toString()))
           {
             this.handleTagBackspace()
           }
-          if( arrayKeys.include(e.keyCode.toString()) )
+
+          if(this.addKey.includes(e.keyCode.toString()))
           {
             e.preventDefault()
             this.addTag()
           }
-          if(e.keyCode === 13 && !arrayKeys.include('13') && this.deleteKey !== 13)
+
+          if(e.keyCode === 13 && this.deleteKey !== 13)
           {
             e.preventDefault()
           }
