@@ -67,14 +67,14 @@ Just add the tags as a v-model and follow the code above just don't change the v
 
 ### Props
 
-By Default The tag is `added` when you click the `Enter Key` but you can customize it by adding `addKey` prop with KeyCode of your choice.
+By Default The tag is `added` when you click the `Enter Key` but you can customize it by adding `addKey` prop with array of KeyCodes of your choice.
 You can have it <a href="http://keycode.info/">here</a>.
-For Example `188` for Comma `,`
+For Example `['188','13']` for Comma `,` and `Enter Key`
 
 ```html
 <div id="app">
 
-  <input-tags v-model="tags" :addKey="188">
+  <input-tags v-model="tags" :addKey="['188','13']">
     <div class="tags-input"
             slot-scope="{tag,removeTag,inputEventHandlers,inputBindings }">
             <span v-for="tag in tags"
@@ -106,14 +106,14 @@ const app = new Vue({
 });
 ```
 
-By Default The tag is `deleted` when you click `delete Key` but you can customize it by adding `deleteKey` prop with KeyCode of your choice.
+By Default The tag is `deleted` when you click `delete Key` but you can customize it by adding `deleteKey` prop with array of KeyCodes of your choice.
 You can have it <a href="http://keycode.info/">here</a>.
-For Example `13` for Comma `Enter`
+For Example `['13']` for `Enter key`
 Now When we click `Enter` we delete the tag
 ```html
 <div id="app">
 
-  <input-tags v-model="tags" :deleteKey="13">
+  <input-tags v-model="tags" :deleteKey="['13']">
     <div class="tags-input"
             slot-scope="{tag,removeTag,inputEventHandlers,inputBindings }">
             <span v-for="tag in tags"
