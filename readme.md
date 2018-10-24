@@ -74,7 +74,7 @@ For Example `['188','13']` for Comma `,` and `Enter Key`
 ```html
 <div id="app">
 
-  <input-tags v-model="tags" :addKey="['188','13']">
+  <input-tags v-model="tags" add-key="['188','13']">
     <div class="tags-input"
             slot-scope="{tag,removeTag,inputEventHandlers,inputBindings }">
             <span v-for="tag in tags"
@@ -113,7 +113,7 @@ Now When we click `Enter` we delete the tag
 ```html
 <div id="app">
 
-  <input-tags v-model="tags" :deleteKey="['13']">
+  <input-tags v-model="tags" delete-key="['13']">
     <div class="tags-input"
             slot-scope="{tag,removeTag,inputEventHandlers,inputBindings }">
             <span v-for="tag in tags"

@@ -7,15 +7,11 @@
     props: {
       deleteKey: {
       type: Array,
-      default: function() {
-          return ['8']
-        }
+      default: () => ['8']
       },
       addKey: {
       type: Array,
-      default: function() {
-          return ['13']
-        }
+      default: () => ['13']
       },
       tags:{
         required: true
@@ -59,8 +55,8 @@
 
           if(this.addKey.includes(e.keyCode.toString()))
           {
-            e.preventDefault()
             this.addTag()
+            e.preventDefault()
           }
 
           if(e.keyCode === 13 && this.deleteKey !== 13)
