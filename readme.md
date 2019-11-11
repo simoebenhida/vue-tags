@@ -2,14 +2,6 @@
 
 A Flexible Vue.js 2 input Tag component where you can edit wathever you like related to HTML/CSS.
 
-<p align="center">
-  <img src="http://devma.net/img/demo.gif" width="750" alt="Logo"/>
-</p>
-
-## Demo
-
-<a href="http://devma.net/package/Vuetags">Demo</a>
-
 ## Installation :
 
 ```javascript
